@@ -1,4 +1,13 @@
 def fizz_buzz(number)
+  if number % 3 == 0
+    puts "Fizz"
+  elsif number % 5 == 0
+    puts "Buzz"
+  elsif number % 3 == 0 && number % 5 ==0
+    puts "FizzBuzz"
+  else
+    puts number.to_s
+  end
 end
 
 puts "1以上の数字を入力してください"
